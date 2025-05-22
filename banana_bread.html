@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Bananas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="review.css" />
+    <link rel="stylesheet" href="products.css" />
+
+    <script src="navbarfooter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="fade-in">
+    <div class="container">
+      <h2>Banana Bread</h2>
+
+      <div class="products">
+        <!-- Regular Bananas -->
+        <div class="product">
+          <img
+            src="banana-bread.jpg"
+            alt="Image description"
+            class="overview"
+          />
+          <h3>Soft and Delectable</h3>
+          <p>$4.00 per loaf</p>
+          <br />
+          <label>
+            Quantity:
+            <input type="number" id="quantityRegular" min="0" value="0" />
+          </label>
+
+          <div>
+            <button
+              class="btn"
+              onclick="addToCart('Banana Bread', 4.00, document.getElementById('quantityRegular').value, 'banana-bread.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div>
+            <a href="products.html" class="btn">Go Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3>About This Banana</h3>
+      <div class="product">
+        <p>
+          A warm, comforting classic made with ripe bananas for the perfect
+          balance of sweetness and softness. Moist, flavorful, and perfect for
+          breakfast, dessert, or a snack, banana bread is a timeless treat that
+          brings homemade goodness to every bite!
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="reviews">
+        <h2>Customer Reviews</h2>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Best Banana Bread Ever!</h3>
+          <p>"This banana bread is absolutely amazing! It’s perfectly moist, with just the right amount of sweetness and banana flavor. It’s my new favorite snack, and it’s even better with a little butter on top." – Amanda R.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️ – A Family Favorite</h3>
+          <p>"I made this for a family gathering, and it was a huge hit! Everyone loved how moist and flavorful the bread was. Definitely adding this to my regular baking rotation." – Daniel K.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Perfectly Moist & Delicious</h3>
+          <p>"I’ve baked banana bread many times, but this one is next level. It’s so moist and packed with banana flavor, with just the right amount of sweetness. It disappeared in no time!" – Jessie M.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Comfort in Every Slice</h3>
+          <p>"This banana bread is the ultimate comfort food. It’s so soft and warm, and the banana flavor is rich but not overpowering. Perfect for breakfast or an afternoon treat with coffee!" – Mateo G.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️ – Great for Gifting</h3>
+          <p>"I made this banana bread for a gift, and it was a big hit! The bread was soft and flavorful, and the recipient couldn’t stop raving about it. I’ll be making more for the holidays!" – Priya S.</p>
+        </div>      
+      </div>
+    </div>
+    <script src="products.js"></script>
+
+  </body>
+</html>

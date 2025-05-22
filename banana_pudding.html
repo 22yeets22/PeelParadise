@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Bananas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="review.css" />
+    <link rel="stylesheet" href="products.css" />
+    
+    <script src="navbarfooter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="fade-in">
+    <div class="container">
+      <h2>Banana Pudding</h2>
+      <div class="products">
+        <!-- Regular Bananas -->
+        <div class="product">
+          <img
+            src="banana-pudding.jpg"
+            alt="Image description"
+            class="overview"
+          />
+          <h3>Delicious and Healthy</h3>
+          <p>$4.50 per cup</p>
+          <br />
+          <label>
+            Quantity:
+            <input type="number" id="quantityRegular" min="0" value="0" />
+          </label>
+
+          <div>
+            <button
+              class="btn"
+              onclick="addToCart('Banana Pudding', 4.50, document.getElementById('quantityRegular').value, 'banana-pudding.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div>
+            <a href="products.html" class="btn">Go Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3>About This Banana</h3>
+      <div class="product">
+        <p>
+          Our Banana Pudding is a gooey and sweet dessert that is garunteed to make you want more. Its both organic and healthy while still maintaing a delicious flavor.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="reviews">
+        <h2>Customer Reviews</h2>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Heavenly Banana Pudding!</h3>
+          <p>"This banana pudding is the best I’ve ever had. The layers of creamy custard, fresh bananas, and crunchy vanilla wafers are absolute perfection. It’s a dessert I can’t stop craving!" – Amanda R.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️ – Classic Comfort Food</h3>
+          <p>"I grew up eating banana pudding, and this one brings me back home. The flavor is so rich, but not too sweet, and the texture is spot on. Perfect for any gathering." – Daniel K.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – A Sweet Delight!</h3>
+          <p>"I’m not usually a fan of puddings, but this banana pudding won me over. It’s so creamy and the bananas are perfectly ripe. Every bite is an absolute treat!" – Jessie M.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Comfort in a Cup</h3>
+          <p>"This banana pudding is comfort food at its finest. The combination of soft bananas, rich custard, and crunchy wafers makes each spoonful heavenly. It’s a go-to dessert for family dinners." – Mateo G.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️ – Perfect for Parties</h3>
+          <p>"Made this for a dinner party and it was a huge hit. Everyone loved it, especially the texture—smooth but with a bit of crunch from the wafers. Would love a larger portion size!" – Priya S.</p>
+        </div>
+      
+      </div>
+    </div>
+    <script src="products.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Bananas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="review.css" />
+    <link rel="stylesheet" href="products.css" />
+
+    <script src="navbarfooter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="fade-in">
+    <div class="container">
+      <h2>Plantains</h2>
+      <div class="products">
+        <!-- Regular Bananas -->
+        <div class="product">
+          <img
+            src="banana-plantain.jpg"
+            alt="Image description"
+            class="overview"
+          />
+          <h3>Yummy and Versatile</h3>
+          <p>$1.75 per bunch</p>
+          <br />
+          <label>
+            Quantity:
+            <input type="number" id="quantityRegular" min="0" value="0" />
+          </label>
+
+          <div>
+            <button
+              class="btn"
+              onclick="addToCart('Plantains', 1.75, document.getElementById('quantityRegular').value, 'banana-plantain.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div>
+            <a href="products.html" class="btn">Go Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3>About This Banana</h3>
+      <div class="product">
+        <p>A versatile staple in many cuisines, plantains are larger and starchier than regular bananas, making them perfect for frying, baking, or boiling. Whether you enjoy them crispy and savory or caramelized and sweet, plantains are a delicious and nutritious addition to any meal!</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="reviews">
+        <h2>Customer Reviews</h2>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – These Plantains Changed My Cooking!</h3>
+          <p>"I never knew how much I needed plantains in my life until I tried these. Fried, baked, or boiled—they come out perfect every time. Super fresh and full of flavor." – Amanda R.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️ – Great Quality, Guilt-Free</h3>
+          <p>"These plantains are ethically sourced and taste amazing. I use them for tostones and sweet maduros—my kids devour them. Definitely a weekly staple now." – Daniel K.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Fuel for Days</h3>
+          <p>"As someone who works out a lot, I love using plantains as a carb source. These ones cook beautifully and have the perfect starchy texture I need post-workout." – Jessie M.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Just What I Wanted</h3>
+          <p>"These plantains were exactly what I was hoping for—firm, ripe, and super versatile. Whether I’m making chips or baking them, they turn out perfect every time." – Mateo G.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️ – Perfect for Cooking</h3>
+          <p>"I used these to make plantain lasagna and it was incredible. The flavor was rich and they cooked down beautifully. I’d love to see a bulk order option!" – Priya S.</p>
+        </div>
+      
+      </div>
+    </div>
+    </body>
+    
+    <script src="products.js"></script>
+
+  </body>
+</html>
+
+
+
+
+
+

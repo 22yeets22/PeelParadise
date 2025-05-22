@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Bananas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="review.css" />
+    <link rel="stylesheet" href="products.css" />
+    
+    <script src="navbarfooter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="fade-in">
+    <div class="container">
+      <h2>Choco Banana</h2>
+
+      <div class="products">
+        <!-- Regular Bananas -->
+        <div class="product">
+          <img
+            src="choco-banana.jpg"
+            alt="Image description"
+            class="overview"
+          />
+          <h3>Sweet and Tasty</h3>
+          <p>$3.00 per bunch</p>
+          <br />
+          <label>
+            Quantity:
+            <input type="number" id="quantityRegular" min="0" value="0" />
+          </label>
+
+          <div>
+            <button
+              class="btn"
+              onclick="addToCart('Chocolate Bananas', 3.00, document.getElementById('quantityRegular').value, 'choco-banana.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div>
+            <a href="products.html" class="btn">Go Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3>About This Banana</h3>
+      <div class="product">
+        <p>
+          Our Choco Bananas are a sweet and delicious snack. We use only the
+          most premium Belgian milk chocolate in order to create a exquisite
+          burst of flavors.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="reviews">
+        <h2>Customer Reviews</h2>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Dessert and Snack in One!</h3>
+          <p>"These chocolate bananas are my new guilty pleasure. The banana is perfectly sweet and soft, and the chocolate coating is rich but not overpowering. Pure magic." – Amanda R.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️ – A Hit with the Whole Family</h3>
+          <p>"We keep a stash of these in the freezer and the kids think they’re ice cream bars! Love that they’re made with real fruit and quality chocolate. Total win." – Daniel K.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Perfect Post-Workout Treat</h3>
+          <p>"I like a little something sweet after a workout, and these chocolate bananas hit the spot. They’re satisfying without being heavy. Bonus: no weird ingredients!" – Jessie M.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Sweet, Simple, Satisfying</h3>
+          <p>"I didn’t expect chocolate bananas to become my favorite snack, but here we are. The combo is just perfect—creamy banana inside, crisp chocolate shell outside." – Mateo G.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️ – Crowd-Pleaser for Sure</h3>
+          <p>"I served these at a party and they were the first thing gone. Everyone loved them. Would be amazing if there were dark, milk, and white chocolate options!" – Priya S.</p>
+        </div>
+      
+      </div>
+    </div>
+    <script src="products.js"></script>
+
+  </body>
+</html>

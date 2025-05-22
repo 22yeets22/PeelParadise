@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Bananas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="review.css" />
+    <link rel="stylesheet" href="products.css" />
+
+    <script src="navbarfooter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="fade-in">
+    <div class="container">
+      <h2>Red Bananas</h2>
+
+      <div class="products">
+        <!-- Regular Bananas -->
+        <div class="product">
+          <img
+            src="banana-red.jpg"
+            alt="Image description"
+            class="overview"
+          />
+          <h3>Tasty and Savory</h3>
+          <p>$2.00 per bunch</p>
+          <br />
+          <label>
+            Quantity:
+            <input type="number" id="quantityRegular" min="0" value="0" />
+          </label>
+
+          <div>
+            <button
+              class="btn"
+              onclick="addToCart('Red Bananas', 2.00, document.getElementById('quantityRegular').value, 'banana-red.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div>
+            <a href="products.html" class="btn">Go Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3> About This Banana</h3>
+      <div class="product">
+        <p>Sweeter and creamier than regular bananas, red bananas have a rich, berry-like flavor with a hint of vanilla. Their reddish-purple peel and soft, nutrient-packed flesh make them a delicious and unique treat. Enjoy them fresh, in smoothies, or as a naturally sweet addition to your favorite recipes!</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="reviews">
+        <h2>Customer Reviews</h2>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Obsessed with These Red Bananas!</h3>
+          <p>"I had never tried red bananas before, but these completely blew me away. They’re sweeter and creamier than yellow bananas, with a hint of berry flavor. I’m hooked!" – Amanda R.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️ – Guilt-Free and Delicious</h3>
+          <p>"I love knowing these red bananas are ethically grown. They taste amazing and feel like a treat, but they’re also super healthy. My kids think they’re a fun ‘banana upgrade’!" – Daniel K.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – My New Post-Workout Snack</h3>
+          <p>"Red bananas are a total game changer. They’re rich in nutrients, and the flavor is unreal—almost like a mix between a banana and a berry. They fuel my runs better than anything else." – Jessie M.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Perfect Texture, Beautiful Color</h3>
+          <p>"These red bananas arrived in perfect condition and were the ideal ripeness. I love the creamy texture and slight tangy-sweet taste. Plus, they look gorgeous on the counter!" – Mateo G.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️ – Amazing for Baking</h3>
+          <p>"I used these red bananas in banana bread and it came out super moist with a richer flavor than usual. A subtle berry note made it extra special. Please offer larger packs!" – Priya S.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="products.js"></script>
+  </body>
+</html>
+
+
+
+
+
+

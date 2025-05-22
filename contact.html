@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Peel Paradise</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .contact-container {
+        max-width: 500px;
+        margin: 40px auto;
+        padding: 20px 25px;
+        border: 1px solid #ddd;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        background: rgba(255, 255, 237, 0.85);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+
+      /* Modify the contact info text to reduce spacing */
+      .contact-container p {
+        margin: 5px 0; /* Reduced margin to tighten spacing */
+        font-size: 16px; /* Ensured consistent font size */
+      }
+
+      .contact-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px 12px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+      }
+
+      .map {
+        max-width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body class="fade-in">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+
+      <div class="text-align: center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.44737518884!2d-80.38128512459647!3d25.782485534491325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1743781047701!5m2!1sen!2sus"
+          width="300"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <p>
+        Email:
+        <a href="mailto: support@peelparadise.com">support@peelparadise.com</a>
+      </p>
+      <p>Phone: <a href="tel: 1234567890">+1 (123) 456-7890</a></p>
+      <p>Address: 7182 Paradise Way, Miami, FL 33145</p>
+    </div>
+
+    <div class="contact-container">
+      <h3>Send Us a Message</h3>
+      <form class="contact-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+
+    <script src="navbarfooter.js"></script>
+  </body>
+</html>

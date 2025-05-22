@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Bananas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="review.css" />
+    <link rel="stylesheet" href="products.css" />
+    
+    <script src="navbarfooter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="fade-in">
+    <div class="container">
+      <h2>Banana Popsicles</h2>
+
+      <div class="products">
+        <!-- Regular Bananas -->
+        <div class="product">
+          <img
+            src="banana-popsicle.jpg"
+            alt="Image description"
+            class="overview"
+          />
+          <h3>Cool and Tasty</h3>
+          <p>$2.75 per pack</p>
+          <br />
+          <label>
+            Quantity:
+            <input type="number" id="quantityRegular" min="0" value="0" />
+          </label>
+
+          <div>
+            <button
+              class="btn"
+              onclick="addToCart('Banana Popsicle', 2.75, document.getElementById('quantityRegular').value, 'banana-popsicle.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div>
+            <a href="products.html" class="btn">Go Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3>About This Banana</h3>
+      <div class="product">
+        <h4>
+          Our Banana Popsicle is an icy and refreshing snack perfect for the summer or even the winter. It combines our premium banana flavor with fresh milk in order to produce a unique and tasteful spread of flavors. 
+        </h4>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="reviews">
+        <h2>Customer Reviews</h2>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – The Ultimate Summer Treat!</h3>
+          <h4>"These banana popsicles are absolutely delicious! They’re the perfect balance of sweet and creamy, and the banana flavor is so fresh. I love having one after a workout or on a hot day." – Amanda R.</h4>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️ – Refreshing and Healthy</h3>
+          <h4>"I’m obsessed with these banana popsicles. They’re so refreshing and much healthier than other frozen treats. My kids love them, and I love that they’re made with real bananas." – Daniel K.</h4>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Creamy, Sweet, and Perfectly Frozen</h3>
+          <h4>"I’m always looking for a healthier snack, and these banana popsicles are a game changer. The creamy texture and natural sweetness are spot on. Definitely my new go-to frozen snack!" – Jessie M.</h4>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – A Cool, Tropical Escape</h3>
+          <h4>"These banana popsicles are like a mini vacation in every bite! The flavor is so fresh and natural. Plus, the kids love them, so I never have to feel guilty about giving them a treat." – Mateo G.</h4>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️ – Perfect for Family Parties</h3>
+          <h4>"I served these banana popsicles at a BBQ, and they were a huge hit! They’re easy to eat, delicious, and a much healthier alternative to sugary pops. Would love to see a variety pack!" – Priya S.</h4>
+        </div>
+      
+      </div>
+    <div>
+      <script src="products.js"></script>
+
+  </body>
+</html>

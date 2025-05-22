@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Bananas</title>
+    <link rel="stylesheet" href="products.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="fade-in">
+    <div class="container">
+      <h2>Our Products</h2> 
+
+      <!-- Search Bar -->
+      <input type="text" id="search" placeholder="Search for a product..." onkeyup="filterProducts()" />
+      <br>
+ 
+      <div class="products">
+        <!-- Regular Bananas -->
+        <div class="product" data-name="Regular Bananas">
+          <img src="banana-regular.jpeg" alt="Regular Bananas" />
+          <h3>Regular Bananas</h3>
+          <p>$1.00 per bunch</p>
+          <label>
+            Quantity:
+            <input type="number" id="quantityRegular" min="0" value="0" />
+          </label>
+          <div>
+            <a href="regular_bananas.html" class="btn">View Item</a>
+            <button
+              class="btn"
+              onclick="addToCart('Regular Bananas', 1.00, document.getElementById('quantityRegular').value, 'banana-regular.jpeg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Organic Bananas -->
+        <div class="product" data-name="Organic Bananas">
+          <img src="organic-banana.jpg" alt="Organic Bananas" />
+          <h3>Organic Bananas</h3>
+          <p>$1.50 per bunch</p>
+          <label>
+            Quantity:
+            <input type="number" id="quantityOrganic" min="0" value="0" />
+          </label>
+          <div>
+            <a href="organic_bananas.html" class="btn">View Item</a>
+            <button
+              class="btn"
+              onclick="addToCart('Organic Bananas', 1.50, document.getElementById('quantityOrganic').value, 'organic-banana.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Red Bananas -->
+        <div class="product" data-name="Red Bananas">
+          <img src="banana-red.jpg" alt="Red Bananas" />
+          <h3>Red Bananas</h3>
+          <p>$2.00 per bunch</p>
+          <label>
+            Quantity:
+            <input type="number" id="quantityRed" min="0" value="0" />
+          </label>
+          <div>
+            <a href="red_bananas.html" class="btn">View Item</a>
+            <button
+              class="btn"
+              onclick="addToCart('Red Bananas', 2.00, document.getElementById('quantityRed').value, 'banana-red.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Plantains -->
+        <div class="product" data-name="Plantains">
+          <img src="banana-plantain.jpg" alt="Plantains" />
+          <h3>Plantains</h3>
+          <p>$1.75 per bunch</p>
+          <label>
+            Quantity:
+            <input type="number" id="quantityPlantain" min="0" value="0" />
+          </label>
+          <div>
+            <a href="plantains.html" class="btn">View Item</a>
+            <button
+              class="btn"
+              onclick="addToCart('Plantains', 1.75, document.getElementById('quantityPlantain').value, 'banana-plantain.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Banana Chips -->
+        <div class="product" data-name="Banana Chips">
+          <img src="banana-chips.jpg" alt="Banana Chips" />
+          <h3>Banana Chips</h3>
+          <p>$2.00 per bag</p>
+          <label>
+            Quantity:
+            <input type="number" id="quantityChips" min="0" value="0" />
+          </label>
+          <div>
+            <a href="banana_chips.html" class="btn">View Item</a>
+            <button
+              class="btn"
+              onclick="addToCart('Banana Chips', 2.00, document.getElementById('quantityChips').value, 'banana-chips.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Banana Bread -->
+        <div class="product" data-name="Banana Bread">
+          <img src="banana-bread.jpg" alt="Banana Bread" />
+          <h3>Banana Bread</h3>
+          <p>$4.00 per loaf</p>
+          <label>
+            Quantity:
+            <input type="number" id="quantityBread" min="0" value="0" />
+          </label>
+          <div>
+            <a href="banana_bread.html" class="btn">View Item</a>
+            <button
+              class="btn"
+              onclick="addToCart('Banana Bread', 4.00, document.getElementById('quantityBread').value, 'banana-bread.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Banana Smoothie -->
+        <div class="product" data-name="Banana Smoothie">
+          <img src="banana-smoothie.jpg" alt="Banana Smoothie" />
+          <h3>Banana Smoothie</h3>
+          <p>$3.50 per bottle</p>
+          <label>
+            Quantity:
+            <input type="number" id="quantitySmoothie" min="0" value="0" />
+          </label>
+          <div>
+            <a href="banana_smoothie.html" class="btn">View Item</a>
+            <button
+              class="btn"
+              onclick="addToCart('Banana Smoothie', 3.50, document.getElementById('quantitySmoothie').value, 'banana-smoothie.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Dried Banana -->
+        <div class="product" data-name="Dried Banana">
+          <img src="banana-dried.jpg" alt="Dried Banana" />
+          <h3>Dried Banana</h3>
+          <p>$2.50 per pack</p>
+          <label>
+            Quantity:
+            <input type="number" id="quantityDried" min="0" value="0" />
+          </label>
+          <div>
+            <a href="dried_banana.html" class="btn">View Item</a>
+            <button
+              class="btn"
+              onclick="addToCart('Dried Banana', 2.50, document.getElementById('quantityDried').value, 'banana-dried.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Chocolate-Covered Bananas -->
+        <div class="product" data-name="Chocolate-Covered Bananas">
+          <img src="choco-banana.jpg" alt="Chocolate-Covered Bananas" />
+          <h3>Chocolate-Covered Bananas</h3>
+          <p>$3.00 per pack</p>
+          <label>
+            Quantity:
+            <input type="number" id="quantityChoco" min="0" value="0" />
+          </label>
+          <div>
+            <a href="choco_banana.html" class="btn">View Item</a>
+            <button
+              class="btn"
+              onclick="addToCart('Chocolate-Covered Bananas', 3.00, document.getElementById('quantityChoco').value, 'choco-banana.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Banana Pudding -->
+        <div class="product" data-name="Banana Pudding">
+          <img src="banana-pudding.jpg" alt="Banana Pudding" />
+          <h3>Banana Pudding</h3>
+          <p>$4.50 per cup</p>
+          <label>
+            Quantity:
+            <input type="number" id="quantityPudding" min="0" value="0" />
+          </label>
+          <div>
+            <a href="banana_pudding.html" class="btn">View Item</a>
+            <button
+              class="btn"
+              onclick="addToCart('Banana Pudding', 4.50, document.getElementById('quantityPudding').value, 'banana-pudding.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Banana Popsicle -->
+        <div class="product" data-name="Banana Popsicles">
+          <img src="banana-popsicle.jpg" alt="Banana Popsicle" />
+          <h3>Banana Popsicles</h3>
+          <p>$2.75 per pack</p>
+          <label>
+            Quantity:
+            <input type="number" id="quantityPopsicles" min="0" value="0" />
+          </label>
+          <div>
+            <a href="banana_popsicle.html" class="btn">View Item</a>
+            <button
+              class="btn"
+              onclick="addToCart('Banana Popsicles', 2.75, document.getElementById('quantityPopsicles').value, 'banana-popsicle.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Banana Pancakes -->
+        <div class="product" data-name="Banana Pancakes">
+          <img src="banana-pancakes.jpg" alt="Banana Pancakes" />
+          <h3>Banana Pancakes</h3>
+          <p>$5.00 per serving</p>
+          <label>
+            Quantity:
+            <input type="number" id="quantityPancakes" min="0" value="0" />
+          </label>
+          <div>
+            <a href="banana_pancakes.html" class="btn">View Item</a>
+            <button
+              class="btn"
+              onclick="addToCart('Banana Pancakes', 5.00, document.getElementById('quantityPancakes').value, 'banana-pancakes.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <a href="cart.html" class="btn">Go to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="navbarfooter.js"></script>
+    <script src="products.js"></script>
+
+    <!-- JavaScript to handle search functionality -->
+    <script>
+      function filterProducts() {
+        const searchInput = document.getElementById("search").value.toLowerCase();
+        const products = document.querySelectorAll(".product");
+
+        products.forEach(product => {
+          const productName = product.getAttribute("data-name").toLowerCase();
+          if (productName.includes(searchInput)) {
+            product.style.display = "block";
+          } else {
+            product.style.display = "none";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

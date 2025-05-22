@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Bananas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="review.css" />
+    <link rel="stylesheet" href="products.css" />
+    
+    <script src="navbarfooter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="fade-in">
+    <div class="container">
+      <h2>Dired Banana</h2>
+
+      <div class="products">
+        <!-- Regular Bananas -->
+        <div class="product">
+          <img
+            src="banana-dried.jpg"
+            alt="Image description"
+            class="overview"
+          />
+          <h3>Crunchy and Flavorful</h3>
+          <p>$2.50 per bunch</p>
+          <br />
+          <label>
+            Quantity:
+            <input type="number" id="quantityRegular" min="0" value="0" />
+          </label>
+
+          <div>
+            <button
+              class="btn"
+              onclick="addToCart('Dried Bananas', 2.50, document.getElementById('quantityRegular').value, 'banana-dried.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div>
+            <a href="products.html" class="btn">Go Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3>About This Banana</h3>
+      <div class="product">
+        <p>
+          Our Dried Bananas are a healthy snack to nibble on. It has the taste of a banana with a much chewier texture.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="reviews">
+        <h2>Customer Reviews</h2>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Addicted to These Dried Bananas!</h3>
+          <p>"These are hands down the best dried bananas I’ve ever had. Naturally sweet with no added sugar, and the chewy texture is perfect. Great for snacking on the go!" – Amanda R.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️ – Guilt-Free Snack for the Whole Family</h3>
+          <p>"My kids love these in their lunchboxes, and I love that they’re just bananas—no junk. They’re a healthy, mess-free treat we can all feel good about." – Daniel K.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Great Energy Boost</h3>
+          <p>"I keep a bag of these in my gym bag. They’re the perfect pre-workout snack—portable, tasty, and full of natural energy. So much better than processed bars." – Jessie M.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Simple, Delicious, Convenient</h3>
+          <p>"These dried bananas are just right—not too hard, not too soft. Love tossing them into yogurt or oatmeal. They taste like real fruit, because they are!" – Mateo G.</p>
+        </div>
+      
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️ – Awesome for Baking & Snacking</h3>
+          <p>"Used these in some trail mix and banana cookies—so flavorful! I like that they’re not overly sweet and actually taste like bananas. Would love to see a family-size pack!" – Priya S.</p>
+        </div>
+      
+      </div>    
+    </div>
+    <script src="products.js"></script>
+
+  </body>
+</html>

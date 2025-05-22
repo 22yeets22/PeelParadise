@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Bananas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="review.css" />
+    <link rel="stylesheet" href="products.css" />
+
+    <script src="navbarfooter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="fade-in">
+    <div class="container">
+      <h2>Banana Pancakes</h2>
+
+   
+      <div class="products">
+        <!-- Regular Bananas -->
+        <div class="product">
+          <img
+            src="banana-pancakes.jpg"
+            alt="Image description"
+            class="overview"
+          />
+          <h3>Yummy and Sweet</h3>
+          <p>$5.00 per serving</p>
+          <br />
+          <label>
+            Quantity:
+            <input type="number" id="quantityRegular" min="0" value="0" />
+          </label>
+
+          <div>
+            <button
+              class="btn"
+              onclick="addToCart('Banana Pancakes', 5.00, document.getElementById('quantityRegular').value, 'banana-pancakes.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div>
+            <a href="products.html" class="btn">Go Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3>About This Banana</h3>
+      <div class="product">
+        <p>
+          Our Banana Pancakes are a perfect breakfest meal for any fuit enjoyers. It combines the sweet flavor of our premium organic bananas with the texture of a freshly homemade pancake. 
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="reviews">
+          <h2>Customer Reviews</h2>
+        
+          <div class="review">
+            <h3>⭐️⭐️⭐️⭐️⭐️ – Best Pancakes Ever!</h3>
+            <p>"These banana pancakes are incredible. They’re light, fluffy, and have the perfect amount of natural sweetness from the bananas. I can’t get enough of them—definitely my new favorite breakfast!" – Amanda R.</p>
+          </div>
+        
+          <div class="review">
+            <h3>⭐️⭐️⭐️⭐️ – Perfect for a Cozy Morning</h3>
+            <p>"Made these for brunch, and everyone loved them. The banana flavor is subtle but so delicious. They’re the perfect comfort food, and I feel good knowing I’m getting some fruit in my morning." – Daniel K.</p>
+          </div>
+        
+          <div class="review">
+            <h3>⭐️⭐️⭐️⭐️⭐️ – Fluffy, Sweet, and Satisfying</h3>
+            <p>"I’ve tried banana pancakes before, but these are on another level. They’re so fluffy and moist, with just the right amount of sweetness. I topped them with maple syrup and fresh berries—absolute perfection!" – Jessie M.</p>
+          </div>
+        
+          <div class="review">
+            <h3>⭐️⭐️⭐️⭐️⭐️ – A Healthy Twist on Pancakes</h3>
+            <p>"I love how these banana pancakes are both indulgent and healthy. The bananas add natural sweetness, and I feel like I’m getting a great breakfast without all the sugar. My kids love them too!" – Mateo G.</p>
+          </div>
+        
+          <div class="review">
+            <h3>⭐️⭐️⭐️⭐️ – Great for Meal Prep</h3>
+            <p>"These banana pancakes are perfect for meal prepping. I made a big batch and froze them. They heat up beautifully and are the perfect way to start my mornings all week long." – Priya S.</p>
+          </div>
+        </div>
+      </div>
+      <script src="products.js"></script>
+
+  </body>
+</html>

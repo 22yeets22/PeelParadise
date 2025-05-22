@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Bananas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="review.css" />
+    <link rel="stylesheet" href="products.css" />
+
+    <script src="navbarfooter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Organic Bananas </h2>
+
+      <div class="products">
+        <!-- Organic bannanas -->
+        <div class="product">
+          <img
+            src="1533125217-Banana-copy-(1).png"
+            alt="Image description"
+            class="overview"
+          />
+          <h3>Fresh and Organic</h3>
+          <p>$1.00 per bunch</p>
+          <br />
+          <label>
+            Quantity:
+            <input type="number" id="quantityRegular" min="0" value="0" />
+          </label>
+
+          <div>
+            <button
+              class="btn"
+              onclick="addToCart('Organic Bananas', 1.00, document.getElementById('quantityRegular').value, '1533125217-Banana-copy-(1).png')"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div>
+            <a href="products.html" class="btn">Go Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3> About This Banana</h3>
+      <div class="product">
+        <p>Naturally grown without synthetic pesticides or fertilizers, our organic bananas are packed with pure, wholesome goodness. With their sweet flavor and creamy texture, they make a perfect snack, smoothie ingredient, or baking essential. Enjoy a delicious and eco-friendly choice!</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Best Bananas Ever!</h3>
+          <p>
+            "I wasn’t expecting much from a banana, but WOW. These were
+            incredibly fresh, sweet, and had the perfect texture. I’ve started
+            eating one every morning. A+ for quality!" – Amanda R.
+          </p>
+        </div>
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️ – Ethically Delicious</h3>
+          <p>
+            "It feels good knowing I’m eating something tasty and ethically
+            sourced. Great price too. My kids love them in their lunchboxes!" –
+            Daniel K.
+          </p>
+        </div>
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Potassium Power!</h3>
+          <p>
+            "I’m a runner, and bananas are a must. These were super fresh and
+            lasted longer than the ones I usually get from the grocery store.
+            Definitely ordering again." – Jessie M.
+          </p>
+        </div>
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Just Right</h3>
+          <p>
+            "These bananas are the Goldilocks of fruit. Not too ripe, not too
+            green. Just right. Also love that the site made ordering easy." –
+            Mateo G.
+          </p>
+        </div>
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️ – Banana Bread Heaven</h3>
+          <p>
+            "Used a bunch to make banana bread and it turned out AMAZING.
+            Perfect ripeness and flavor. Would love a bulk option though!" –
+            Priya S.
+          </p>
+        </div>
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Smoothies Level: Expert</h3>
+          <p>
+            "I added these to my protein smoothies and it changed the game.
+            Creamy, not stringy, and packed with flavor. Will keep these
+            stocked!" – Zoe T.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="products.js"></script>
+  </body>
+</html>

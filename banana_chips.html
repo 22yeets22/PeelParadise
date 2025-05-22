@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Bananas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="review.css" />
+    <link rel="stylesheet" href="products.css" />
+  
+    <script src="navbarfooter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="fade-in">
+    <div class="container">
+      <h2>Banana Chips</h2>
+
+      <div class="products">
+      <!-- Regular Bananas -->
+      <div class="product">
+        <img
+          src="banana-chips.jpg"
+          alt="Image description"
+          class="overview"
+        />
+        <h3>Crunchy and Sweet</h3>
+        <p>$2.00 per bag</p>
+        <br />
+        <label>
+          Quantity:
+          <input type="number" id="quantityRegular" min="0" value="0" />
+        </label>
+
+        <div>
+          <button
+            class="btn"
+            onclick="addToCart('Banana Chips', 2.00, document.getElementById('quantityRegular').value, 'banana-chips.jpg')"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div>
+          <a href="products.html" class="btn">Go Back</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+      <h3>About This Banana</h3>
+      <div class="product">
+        <p>
+          Banana chips are one of our classics which people of all ages enjoy.
+          The product combines the sweet flavor or fresh fruit with the
+          crunchiness that a chip provides.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – My New Favorite Snack!</h3>
+          <p>
+            "These banana chips are absolutely addictive! Crispy, slightly
+            sweet, and the perfect amount of crunch. I can’t stop eating
+            them—definitely my go-to snack now." – Amanda R.
+          </p>
+        </div>
+
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️ – Perfect for On-the-Go</h3>
+          <p>
+            "I love having these banana chips in my bag for a quick snack.
+            They’re crunchy and satisfying, and I feel good knowing they’re made
+            from real bananas with no added junk." – Daniel K.
+          </p>
+        </div>
+
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Crispy and Flavorful</h3>
+          <p>
+            "I’ve had banana chips before, but these are next level. They’re
+            super crunchy and have just the right balance of sweet and salty.
+            Perfect for snacking during my workday." – Jessie M.
+          </p>
+        </div>
+
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️⭐️ – Great in Trail Mix</h3>
+          <p>
+            "These banana chips are amazing in trail mix! They add the perfect
+            crunch and sweetness to my snack mix. I’m definitely buying more to
+            stock up!" – Mateo G.
+          </p>
+        </div>
+
+        <div class="review">
+          <h3>⭐️⭐️⭐️⭐️ – Healthy Crunchy Snack</h3>
+          <p>
+            "I love these banana chips as a healthy snack alternative. They’re
+            light, crispy, and great for when I’m craving something crunchy. I
+            wish they came in a bigger bag!" – Priya S.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="products.js"></script>
+
+  </body>
+</html>

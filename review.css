@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Banner Section */
+.banner {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000; /* Changed to black */
+  position: relative;
+}
+
+.banner-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.banner h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #000; /* Changed to black */
+}
+
+.banner p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #000; /* Changed to black */
+}
+
+/* Main Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 25px;
+  background: rgba(255, 255, 237, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000; /* Changed to black */
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontally center children */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual Review */
+.review {
+  background-color: #ffeb99;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 70%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #000; /* Changed to black */
+}
+
+.review:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.review img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.review img:hover {
+  opacity: 0.8;
+}
+
+.review h3 {
+  font-size: 1.5em;
+  margin: 15px 0;
+  color: #000; /* Changed to black */
+}
+
+.review p {
+  font-size: 1.2em;
+  color: #000; /* Changed to black */
+}
+
+.review .author-info {
+  margin-top: 15px;
+  font-size: 1em;
+  color: #555;
+}
+
+.review .stars {
+  margin: 10px 0;
+}
+
+.review .stars span {
+  font-size: 20px;
+  color: #f4c542;
+}

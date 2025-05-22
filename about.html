@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body class="fade-in">
+    <header class="hero">
+      <div class="container">
+        <h1>About Us!</h1>
+        <p>We can answer any questions you have about Peel Paradise here!</p>
+      </div>
+    </header>
+
+    <div class="container">
+      <h2>Commonly Asked Questions</h2>
+      <div class="minimizable">
+        <h3>What is our business concept?</h3>
+        <p>
+          The concept the we envision for our business is an amazing banana shop
+          with a wide range of products, all ethically, and sustainably sourced.
+        </p>
+      </div>
+      <div class="minimizable">
+      <h3>When/How was our business established?</h3>
+      <p>
+        Peel Paradise was established in 2015 by three good friends, and since then, we
+        have grown a lot. Now, we have 5 banana factories in Colombia, and 100's
+        of shops across the United States. Recently, we have began expanding our
+        business to Canada.
+      </p>
+      </div>
+      <div class="minimizable">
+      <h3>What is our mission and product/service?</h3>
+      <p>
+        Our mission is to provide quality, pesticide free, ethically sourced
+        bananas straight from our factories in Colombia to your table at a price
+        that ant family can afford.
+      </p>
+      </div>
+      <div class="minimizable">
+      <h3>Where is our business located?</h3>
+      <p>
+        Peel Paradise's many factories are located in the heart of rural
+        Colombia. That is where the real magic happens. We have numerous
+        (hundreds of) locations in the United States, and we are now expanding
+        our business to Canada.
+      </p>
+    </div>
+    </div>
+    <div class="container">
+      <h1>Meet the Members</h1>
+      <div class="minimizable">
+        <img src="Taylor.jpg" alt="Taylor" class="team-member-img">
+          <h2>Taylor</h2>
+          <p>
+            Taylor is a recent addition to our team, bringing a fresh perspective and eagerness to learn. While still adapting to our dynamic environment, Taylor's determination and commitment to improvement make him a valuable part of our company's future. We look forward to seeing their growth and contributions as they continue to embrace challenges and develop their skills. Taylor does however have issues regarding work ethic and sometimes struggles to complete tasks.
+          </p>
+      </div>
+    
+      <div class="minimizable">
+        <img src="Lekang.jpg" alt="Lekang" class="team-member-img">
+          <h2>Lekang</h2>
+          <p>
+            Lekang brings a unique blend of technical expertise and innovative thinking to our banana company. With a strong background in coding and problem-solving, he plays a key role in optimizing our processes and driving efficiency. His strategic approach to challenges is matched only by his dedication to excellence, ensuring that our operations and products are always at the cutting edge of the industry.
+          </p>
+      </div>
+    
+      <div class="minimizable">
+        <img src="Yuhan.jpg" alt="Yuhan" class="team-member-img">
+          <h2>Yuhan</h2>
+          <p>
+            Yuhan's journey from an orchestra musician to a key player in our banana company has been nothing short of transformative. His ability to harmonize business relationships and bring partners together is unparalleled. Now, as our dedicated Sponsor Gatherer, Yuhan leverages his strategic vision and communication skills to secure valuable partnerships, ensuring the continued growth and success of our company.
+          </p>
+      </div>
+    
+      <div class="minimizable">
+        <img src="Aditya.jpg" alt="Aditya" class="team-member-img">
+          <h2>Aditya</h2>
+          <p>
+            Aditya brings a dynamic combination of technical expertise and precision to our banana company. With a strong background in robotics and problem-solving, he plays a vital role in enhancing our operational processes and driving innovation. His strategic mindset and attention to detail ensure that we continue to lead in efficiency and quality within the industry.
+          </p>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Our Projects</h2>
+      <h3>Ethically Sourced Bannanas Straight from Columbia</h3>
+      <img
+        src="costa-rica-banana-farmer.jpg.optimal-(1).jpg"
+        alt="Image description"
+      />
+      <p>
+        Our farmers are paid lavishly for their work on our farms. We do not use
+        any GMOs or pesticides in the production process of our products.
+      </p>
+      <h3>Outreach All Across the World</h3>
+      <img src="banner-one-difference-(1).png" alt="Image description" />
+      <p>
+        We have established various products in order to help local communities
+        in Columbia. We provide fresh bannanas for free to those in need.
+      </p>
+    </div>
+
+    <script src="navbarfooter.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const headers = document.querySelectorAll(".minimizable > h2, .minimizable > h3");
+    
+        headers.forEach(header => {
+          header.style.cursor = "pointer";
+          const content = header.nextElementSibling;
+    
+          if (content) {
+            content.classList.add("collapsible-content", "collapsed");
+    
+            header.addEventListener("click", () => {
+              content.classList.toggle("collapsed");
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
